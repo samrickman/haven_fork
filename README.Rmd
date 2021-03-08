@@ -23,6 +23,8 @@ knitr::opts_chunk$set(
 
 ## Overview
 
+Haven plus is exactly like Haven - except that it allows a larger MALLOC size. This should hopefully fix the issue where a very long string in a Stata file with a lot of rows causes MAX MALLOC error.
+
 Haven enables R to read and write various data formats used by other statistical packages by wrapping the fantastic [ReadStat](https://github.com/WizardMac/ReadStat) C library written by [Evan Miller](http://www.evanmiller.org). Haven is part of the [tidyverse](http://tidyverse.org). Currently it supports:
 
 * __SAS__: `read_sas()` reads `.sas7bdat` + `.sas7bcat` files and `read_xpt()` 

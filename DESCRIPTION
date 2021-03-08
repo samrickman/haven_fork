@@ -1,5 +1,5 @@
-Package: haven
-Title: Import and Export 'SPSS', 'Stata' and 'SAS' Files
+Package: haven_plus
+Title: Import and Export 'SPSS', 'Stata' and 'SAS' Files: Sam fork
 Version: 2.3.1.9000
 Authors@R: 
     c(person(given = "Hadley",

@@ -1,9 +1,10 @@
 #include <stdlib.h>
 
-#define MAX_MALLOC_SIZE 0xFFF000
-/* ~16 MB. Needs to be at least 0x3FF00, i.e. the default ~4MB block size used
- * in compressed SPSS (ZSAV) files. The purpose here is to prevent massive
- * allocations in the event of a malformed file or a bug in the library. */
+#define MAX_MALLOC_SIZE 0xFFFFFFF
+/* This is the bit I have changed from 16mb to 256mb 
+to hopefully fix the long string issues we are encountering with 
+large stata files 
+- Sam */
 
 void *readstat_malloc(size_t len) {
     if (len > MAX_MALLOC_SIZE || len == 0) {

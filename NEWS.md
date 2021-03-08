@@ -1,3 +1,7 @@
+# haven_plus
+
+* Increase max MALLOC size to prevent very long strings in large Stata files breaking everything.
+
 # haven (development version)
 
 * Updated to ReadStat 1.1.4. Most importantly this includes support for
