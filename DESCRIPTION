@@ -1,4 +1,4 @@
-Package: haven_plus
+Package: haven_fork
 Title: Import and Export 'SPSS', 'Stata' and 'SAS' Files: Sam fork
 Version: 2.3.1.9000
 Authors@R: 
