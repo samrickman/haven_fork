@@ -1,4 +1,4 @@
 library(testthat)
-library(haven)
+library(havenFork)
 
-test_check("haven")
+test_check("havenFork")
